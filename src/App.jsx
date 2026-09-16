@@ -17,23 +17,18 @@ function App() {
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
             <a href="#certificates">Certification</a>
+            <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </div>
-
-          {/* ONLY ONE RESUME BUTTON */}
-          <a
-            href="/Swathi_Reddy_Resume_Final.pdf"
-            download
-            className="nav-resume"
-          >
-            Resume
-          </a>
         </div>
       </nav>
 
       {/* ================= HOME ================= */}
 
       <section className="hero-section" id="home">
+        <div className="hero-orbit orbit-one"></div>
+        <div className="hero-orbit orbit-two"></div>
+
         <div className="hero-content">
           <div className="hero-badge">
             <span className="status-dot"></span>
@@ -54,17 +49,19 @@ function App() {
             Swathi <span>Reddy</span>
           </h1>
 
-          <h2 className="hero-title">Aspiring Software Developer</h2>
+          <h2 className="hero-title">
+            Aspiring Software Developer
+          </h2>
 
           <p className="hero-description">
             Computer Science and Engineering student passionate about
-            software development, web technologies, and building practical
-            solutions to real-world problems.
+            software development, web technologies, and creating
+            practical digital solutions that solve real-world problems.
           </p>
 
           <div className="hero-buttons">
             <a href="#projects" className="primary-button">
-              View My Projects
+              Explore My Work
               <span>↗</span>
             </a>
 
@@ -98,6 +95,30 @@ function App() {
         </div>
       </section>
 
+      {/* ================= QUICK STATS ================= */}
+
+      <div className="quick-stats">
+        <div className="stat-item">
+          <strong>8.9</strong>
+          <span>B.Tech CGPA</span>
+        </div>
+
+        <div className="stat-item">
+          <strong>2+</strong>
+          <span>Projects Built</span>
+        </div>
+
+        <div className="stat-item">
+          <strong>88%</strong>
+          <span>Intermediate</span>
+        </div>
+
+        <div className="stat-item">
+          <strong>92%</strong>
+          <span>SSC</span>
+        </div>
+      </div>
+
       {/* ================= ABOUT ================= */}
 
       <section id="about">
@@ -113,36 +134,36 @@ function App() {
         <div className="about-grid">
           <div className="about-main">
             <p className="about-lead">
-              I am a Computer Science and Engineering student with a strong
-              interest in software development, web technologies, and
-              problem-solving.
+              I am a Computer Science and Engineering student with a
+              strong interest in software development, web technologies,
+              and problem-solving.
             </p>
 
             <p>
-              I enjoy turning ideas into practical applications and
-              continuously improving my technical skills through hands-on
-              development. My learning journey includes programming, frontend
-              development, backend development, databases, and software
-              engineering concepts.
+              I enjoy transforming ideas into practical applications
+              and improving my development skills through hands-on
+              projects. My learning journey includes programming,
+              frontend development, backend development, databases,
+              and software engineering fundamentals.
             </p>
 
             <p>
-              I have built full-stack applications such as{" "}
-              <strong>EduVault</strong> and <strong>SafeSeat</strong>, gaining
-              practical experience in designing user interfaces, developing
-              APIs, managing databases, integrating cloud services, and
-              deploying web applications.
+              I have developed projects such as{" "}
+              <strong>EduVault</strong> and <strong>SafeSeat</strong>,
+              gaining practical experience in application development,
+              user interface design, backend development, database
+              management, and deployment.
             </p>
 
             <p>
-              I am currently looking for internship and entry-level
-              opportunities where I can apply my skills, learn from experienced
-              developers, and contribute to meaningful software solutions.
+              I am currently strengthening my knowledge of{" "}
+              <strong>Java and Python</strong> while continuing to
+              develop my software engineering skills.
             </p>
           </div>
 
           <div className="about-highlight-card">
-            <div className="highlight-icon">{"</>"}</div>
+            <div className="highlight-icon">&lt;/&gt;</div>
 
             <h3>What I Bring</h3>
 
@@ -164,7 +185,7 @@ function App() {
 
               <div>
                 <span>04</span>
-                <p>Passion for building software</p>
+                <p>Passion for software development</p>
               </div>
             </div>
           </div>
@@ -184,28 +205,43 @@ function App() {
         </div>
 
         <div className="education-timeline">
-          {/* B.Tech */}
-
           <div className="education-item">
             <div className="timeline-dot"></div>
 
             <div className="education-card">
               <div className="education-top">
-                <span className="education-year">2024 – Present</span>
-                <span className="education-type">B.Tech</span>
+                <span className="education-year">
+                  2024 – Present
+                </span>
+
+                <span className="education-type">
+                  B.Tech
+                </span>
               </div>
 
-              <h3>
-                Bachelor of Technology in Computer Science and Engineering
-              </h3>
+              <div className="education-card-heading">
+                <div>
+                  <h3>
+                    Bachelor of Technology in Computer Science
+                    and Engineering
+                  </h3>
 
-              <h4>Vignan Institute of Technology and Science</h4>
+                  <h4>
+                    Vignan Institute of Technology and Science
+                  </h4>
+                </div>
+
+                <div className="education-score">
+                  <strong>8.9</strong>
+                  <span>CGPA</span>
+                </div>
+              </div>
 
               <p>
-                Pursuing B.Tech in Computer Science and Engineering with
-                practical exposure to programming, web development, database
-                management, data structures, and software engineering
-                concepts.
+                Pursuing B.Tech in Computer Science and Engineering
+                with practical exposure to programming, web
+                development, databases, data structures, and software
+                engineering concepts.
               </p>
 
               <div className="education-tags">
@@ -217,47 +253,72 @@ function App() {
             </div>
           </div>
 
-          {/* Intermediate */}
-
           <div className="education-item">
             <div className="timeline-dot"></div>
 
             <div className="education-card">
               <div className="education-top">
-                <span className="education-year">2022 – 2024</span>
-                <span className="education-type">Intermediate</span>
+                <span className="education-year">
+                  2022 – 2024
+                </span>
+
+                <span className="education-type">
+                  Intermediate
+                </span>
               </div>
 
-              <h3>Intermediate Education</h3>
+              <div className="education-card-heading">
+                <div>
+                  <h3>Intermediate Education</h3>
 
-              <h4>Gouthami Junior College</h4>
+                  <h4>Gouthami Junior College</h4>
+                </div>
+
+                <div className="education-score">
+                  <strong>88%</strong>
+                  <span>Score</span>
+                </div>
+              </div>
 
               <p>
-                Developed a strong foundation in analytical thinking, logical
-                reasoning, and subject knowledge while preparing for higher
-                education in Computer Science and Engineering.
+                Built a strong foundation in analytical thinking,
+                logical reasoning, and academic fundamentals while
+                preparing for higher education in Computer Science.
               </p>
             </div>
           </div>
 
-          {/* SSC */}
-
           <div className="education-item">
             <div className="timeline-dot"></div>
 
             <div className="education-card">
               <div className="education-top">
-                <span className="education-year">2021 – 2022</span>
-                <span className="education-type">SSC</span>
+                <span className="education-year">
+                  2021 – 2022
+                </span>
+
+                <span className="education-type">
+                  SSC
+                </span>
               </div>
 
-              <h3>Secondary School Certificate</h3>
+              <div className="education-card-heading">
+                <div>
+                  <h3>Secondary School Certificate</h3>
 
-              <h4>NEWS High School</h4>
+                  <h4>NEWS High School</h4>
+                </div>
+
+                <div className="education-score">
+                  <strong>92%</strong>
+                  <span>Score</span>
+                </div>
+              </div>
 
               <p>
-                Built a strong foundation in Mathematics, Science, English,
-                analytical thinking, and disciplined learning.
+                Developed a strong academic foundation in Mathematics,
+                Science, English, analytical thinking, and disciplined
+                learning.
               </p>
             </div>
           </div>
@@ -277,8 +338,8 @@ function App() {
         </div>
 
         <p className="section-intro">
-          Technologies and tools I use while learning and building practical
-          software projects.
+          Technologies and programming languages I use while learning,
+          experimenting, and building practical software projects.
         </p>
 
         <div className="skills-grid">
@@ -287,14 +348,25 @@ function App() {
           <div className="skill-category">
             <div className="skill-category-header">
               <span className="skill-icon">01</span>
-              <h3>Programming Languages</h3>
+
+              <div>
+                <h3>Programming</h3>
+                <p>Core programming knowledge</p>
+              </div>
             </div>
 
             <div className="skill-tags">
-              <span>Java</span>
-              <span>JavaScript</span>
-              <span>Python</span>
-              <span>C</span>
+              <span className="skill-completed">
+                C <small>Completed</small>
+              </span>
+
+              <span className="skill-learning">
+                Java <small>Learning</small>
+              </span>
+
+              <span className="skill-learning">
+                Python <small>Learning</small>
+              </span>
             </div>
           </div>
 
@@ -303,14 +375,16 @@ function App() {
           <div className="skill-category">
             <div className="skill-category-header">
               <span className="skill-icon">02</span>
-              <h3>Frontend Development</h3>
+
+              <div>
+                <h3>Frontend Development</h3>
+                <p>Web interface fundamentals</p>
+              </div>
             </div>
 
             <div className="skill-tags">
               <span>HTML</span>
               <span>CSS</span>
-              <span>React.js</span>
-              <span>Vite</span>
             </div>
           </div>
 
@@ -319,22 +393,28 @@ function App() {
           <div className="skill-category">
             <div className="skill-category-header">
               <span className="skill-icon">03</span>
-              <h3>Backend Development</h3>
+
+              <div>
+                <h3>Backend Development</h3>
+                <p>Server-side development</p>
+              </div>
             </div>
 
             <div className="skill-tags">
               <span>Node.js</span>
-              <span>Express.js</span>
-              <span>REST APIs</span>
             </div>
           </div>
 
-          {/* Database & Tools */}
+          {/* Tools */}
 
           <div className="skill-category">
             <div className="skill-category-header">
               <span className="skill-icon">04</span>
-              <h3>Database & Tools</h3>
+
+              <div>
+                <h3>Tools & Database</h3>
+                <p>Development environment</p>
+              </div>
             </div>
 
             <div className="skill-tags">
@@ -344,7 +424,6 @@ function App() {
               <span>Git</span>
               <span>GitHub</span>
               <span>VS Code</span>
-              <span>Cloudinary</span>
             </div>
           </div>
         </div>
@@ -363,32 +442,41 @@ function App() {
         </div>
 
         <p className="section-intro">
-          A selection of full-stack projects that demonstrate my practical
-          development experience and ability to build real-world applications.
+          Practical applications that showcase my development,
+          problem-solving, and implementation skills.
         </p>
 
         <div className="projects-container">
-          {/* ================= EDUVAULT ================= */}
+          {/* EduVault */}
 
           <article className="project-card featured-project">
             <div className="project-card-top">
               <div className="project-number">01</div>
 
-              <span className="project-status completed">
+              <span className="project-status">
                 Completed
               </span>
             </div>
 
-            <div className="project-icon">EV</div>
+            <div className="project-visual">
+              <div className="project-visual-glow"></div>
+
+              <span className="project-logo">EV</span>
+
+              <span className="project-code">&lt;/&gt;</span>
+            </div>
 
             <h3>EduVault</h3>
 
-            <h4>Academic Resource Management Portal</h4>
+            <h4>
+              Academic Resource Management Portal
+            </h4>
 
             <p className="project-description">
-              EduVault is a full-stack academic resource management platform
-              designed to provide students and faculty with an organized
-              system for managing and accessing educational resources.
+              A full-stack academic resource management platform
+              designed to provide students and faculty with an
+              organized system for managing and accessing educational
+              resources.
             </p>
 
             <div className="project-features">
@@ -404,7 +492,7 @@ function App() {
 
               <div>
                 <span>✓</span>
-                Resource categorization and file management
+                Resource categorization and management
               </div>
 
               <div>
@@ -414,12 +502,10 @@ function App() {
             </div>
 
             <div className="tech-stack">
-              <span>React.js</span>
+              <span>HTML</span>
+              <span>CSS</span>
               <span>Node.js</span>
-              <span>Express.js</span>
               <span>MySQL</span>
-              <span>Cloudinary</span>
-              <span>REST APIs</span>
             </div>
 
             <div className="project-buttons">
@@ -437,7 +523,7 @@ function App() {
                 href="https://doi.org/10.22214/ijraset.2026.84523"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-live"
+                className="project-outline"
               >
                 Research Paper
                 <span>↗</span>
@@ -447,7 +533,7 @@ function App() {
                 href="/certificates/eduvalt-certificate.jpeg"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="project-live"
+                className="project-outline"
               >
                 Certificate
                 <span>↗</span>
@@ -455,27 +541,35 @@ function App() {
             </div>
           </article>
 
-          {/* ================= SAFESEAT ================= */}
+          {/* SafeSeat */}
 
           <article className="project-card">
             <div className="project-card-top">
               <div className="project-number">02</div>
 
-              <span className="project-status completed">
+              <span className="project-status">
                 Completed
               </span>
             </div>
 
-            <div className="project-icon">SS</div>
+            <div className="project-visual safeseat-visual">
+              <div className="project-visual-glow"></div>
+
+              <span className="project-logo">SS</span>
+
+              <span className="project-code">01</span>
+            </div>
 
             <h3>SafeSeat</h3>
 
-            <h4>Smart Travel Booking Platform</h4>
+            <h4>
+              Smart Travel Booking Platform
+            </h4>
 
             <p className="project-description">
-              SafeSeat is a travel booking platform designed to simplify bus
-              and train reservations through an intuitive and user-friendly
-              interface.
+              A modern travel booking platform designed to simplify
+              bus and train reservations through an intuitive and
+              user-friendly experience.
             </p>
 
             <div className="project-features">
@@ -506,12 +600,10 @@ function App() {
             </div>
 
             <div className="tech-stack">
-              <span>React.js</span>
-              <span>JavaScript</span>
+              <span>HTML</span>
+              <span>CSS</span>
               <span>Node.js</span>
-              <span>Express.js</span>
               <span>MySQL</span>
-              <span>REST APIs</span>
             </div>
 
             <div className="project-buttons">
@@ -529,7 +621,7 @@ function App() {
         </div>
       </section>
 
-      {/* ================= CERTIFICATION / PUBLICATION ================= */}
+      {/* ================= CERTIFICATION ================= */}
 
       <section id="certificates">
         <div className="section-heading">
@@ -542,7 +634,8 @@ function App() {
         </div>
 
         <p className="section-intro">
-          A research publication associated with my EduVault project.
+          Recognition associated with my EduVault academic resource
+          management project.
         </p>
 
         <div className="certificate-card">
@@ -556,8 +649,8 @@ function App() {
             </h3>
 
             <p className="certificate-description">
-              Research publication associated with the EduVault academic
-              resource management project, published after review in the
+              Research publication associated with the EduVault
+              academic resource management project, published in the
               International Journal for Research in Applied Science &
               Engineering Technology.
             </p>
@@ -600,8 +693,52 @@ function App() {
           <div className="certificate-image-wrapper">
             <img
               src="/certificates/eduvalt-certificate.jpeg"
-              alt="EduVault IJRASET Research Publication Certificate"
+              alt="EduVault Research Publication Certificate"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* ================= RESUME ================= */}
+
+      <section className="resume-section" id="resume">
+        <div className="resume-decoration resume-decoration-one"></div>
+        <div className="resume-decoration resume-decoration-two"></div>
+
+        <div className="resume-content">
+          <div className="resume-icon">CV</div>
+
+          <p className="resume-label">
+            MY PROFESSIONAL PROFILE
+          </p>
+
+          <h2>Want to know more about me?</h2>
+
+          <p>
+            Explore my complete resume to learn more about my
+            education, technical skills, projects, and professional
+            interests.
+          </p>
+
+          <div className="resume-buttons">
+            <a
+              href="/Swathi_Reddy_Resume_Final.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="resume-view-button"
+            >
+              View Resume
+              <span>↗</span>
+            </a>
+
+            <a
+              href="/Swathi_Reddy_Resume_Final.pdf"
+              download
+              className="resume-download-button"
+            >
+              Download Resume
+              <span>↓</span>
+            </a>
           </div>
         </div>
       </section>
@@ -619,13 +756,12 @@ function App() {
         </div>
 
         <p className="section-intro">
-          I'm open to internship opportunities, software development roles,
-          collaborative projects, and opportunities to learn and grow.
+          I'm open to internship opportunities, software development
+          roles, collaborative projects, and opportunities to learn
+          and grow.
         </p>
 
         <div className="contact-grid">
-          {/* Email */}
-
           <a
             href="mailto:swathireddyvutkuri@gmail.com"
             className="contact-card"
@@ -642,8 +778,6 @@ function App() {
 
             <b>↗</b>
           </a>
-
-          {/* LinkedIn */}
 
           <a
             href="https://www.linkedin.com/in/swathireddy-vutkuri-a21855411/"
@@ -664,8 +798,6 @@ function App() {
             <b>↗</b>
           </a>
 
-          {/* GitHub */}
-
           <a
             href="https://github.com/Swathireddy-03"
             target="_blank"
@@ -684,6 +816,21 @@ function App() {
 
             <b>↗</b>
           </a>
+
+          <a
+            href="tel:+919502413681"
+            className="contact-card"
+          >
+            <div className="contact-icon">☎</div>
+
+            <div>
+              <span>Phone</span>
+
+              <strong>+91 95024 13681</strong>
+            </div>
+
+            <b>↗</b>
+          </a>
         </div>
       </section>
 
@@ -696,13 +843,14 @@ function App() {
           </div>
 
           <p>
-            Aspiring Software Developer • Computer Science Engineering
+            Aspiring Software Developer • Computer Science & Engineering
           </p>
 
           <div className="footer-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
             <a href="#contact">Contact</a>
           </div>
 
