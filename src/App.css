@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap");
 
+/* =====================================================
+   GLOBAL
+===================================================== */
+
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -45,7 +49,6 @@ body::before {
   content: "";
 
   position: fixed;
-
   inset: 0;
 
   background-image:
@@ -215,7 +218,7 @@ a {
   align-items: center;
   justify-content: center;
 
-  padding: 130px 20px 80px;
+  padding: 125px 20px 80px;
 
   text-align: center;
 
@@ -267,6 +270,10 @@ a {
   border: 1px solid rgba(92, 157, 255, 0.035);
 }
 
+/* =====================================================
+   HERO BADGE
+===================================================== */
+
 .hero-badge {
   display: inline-flex;
 
@@ -275,7 +282,7 @@ a {
 
   padding: 8px 15px;
 
-  margin-bottom: 27px;
+  margin-bottom: 28px;
 
   border-radius: 30px;
 
@@ -304,13 +311,17 @@ a {
     0 0 12px rgba(85, 216, 138, 0.75);
 }
 
+/* =====================================================
+   PROFILE IMAGE
+===================================================== */
+
 .profile-image-container {
-  width: 148px;
-  height: 148px;
+  width: 170px;
+  height: 170px;
 
-  margin: 0 auto 24px;
+  margin: 0 auto 32px;
 
-  padding: 4px;
+  padding: 5px;
 
   border-radius: 50%;
 
@@ -325,21 +336,42 @@ a {
   box-shadow:
     0 0 0 8px rgba(139, 124, 246, 0.045),
     0 25px 60px rgba(0, 0, 0, 0.38);
+
+  overflow: hidden;
+
+  position: relative;
 }
 
 .profile-image {
   width: 100%;
   height: 100%;
 
-  object-fit: cover;
-
   border-radius: 50%;
 
-  border: 4px solid #0b1020;
+  object-fit: cover;
+
+  /*
+    Adjust this value if necessary.
+
+    20% = face appears higher
+    25% = slightly lower
+    30% = lower
+  */
+  object-position: center 20%;
+
+  display: block;
+
+  position: relative;
+
+  z-index: 2;
 }
 
+/* =====================================================
+   HERO TEXT
+===================================================== */
+
 .hero-greeting {
-  margin: 0 0 5px;
+  margin: 0 0 6px;
 
   color: #818b9d;
 
@@ -393,6 +425,10 @@ a {
 
   line-height: 1.85;
 }
+
+/* =====================================================
+   HERO BUTTONS
+===================================================== */
 
 .hero-buttons {
   display: flex;
@@ -463,6 +499,10 @@ a {
 
   background: rgba(255, 255, 255, 0.07);
 }
+
+/* =====================================================
+   SOCIAL LINKS
+===================================================== */
 
 .hero-socials {
   display: flex;
@@ -593,6 +633,10 @@ section:not(.hero-section):not(.resume-section)::before {
       transparent
     );
 }
+
+/* =====================================================
+   SECTION HEADING
+===================================================== */
 
 .section-heading {
   display: flex;
@@ -1217,6 +1261,10 @@ h2 {
   font-weight: 600;
 }
 
+/* =====================================================
+   PROJECT VISUAL
+===================================================== */
+
 .project-visual {
   height: 145px;
 
@@ -1337,6 +1385,10 @@ h2 {
     );
 }
 
+/* =====================================================
+   PROJECT CONTENT
+===================================================== */
+
 .project-card h3 {
   margin: 0 0 5px;
 
@@ -1422,6 +1474,10 @@ h2 {
 
   border: 1px solid rgba(255, 255, 255, 0.055);
 }
+
+/* =====================================================
+   PROJECT BUTTONS
+===================================================== */
 
 .project-buttons {
   display: flex;
@@ -2009,7 +2065,7 @@ h2 {
 }
 
 /* =====================================================
-   RESPONSIVE
+   RESPONSIVE - TABLET
 ===================================================== */
 
 @media (max-width: 1000px) {
@@ -2043,6 +2099,10 @@ h2 {
     margin: auto;
   }
 }
+
+/* =====================================================
+   RESPONSIVE - SMALL TABLET
+===================================================== */
 
 @media (max-width: 800px) {
   .navbar {
@@ -2082,7 +2142,7 @@ h2 {
   }
 
   .hero-section {
-    padding-top: 180px;
+    padding-top: 190px;
   }
 
   .quick-stats {
@@ -2099,17 +2159,35 @@ h2 {
   }
 }
 
+/* =====================================================
+   RESPONSIVE - MOBILE
+===================================================== */
+
 @media (max-width: 600px) {
   .hero-section {
     min-height: auto;
 
-    padding-top: 180px;
+    padding-top: 185px;
     padding-bottom: 90px;
   }
 
+  /* Profile image on mobile */
   .profile-image-container {
-    width: 125px;
-    height: 125px;
+    width: 140px;
+    height: 140px;
+
+    padding: 4px;
+
+    margin-bottom: 30px;
+  }
+
+  .profile-image {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center 20%;
   }
 
   .hero-section h1 {
@@ -2233,6 +2311,10 @@ h2 {
   }
 }
 
+/* =====================================================
+   RESPONSIVE - SMALL MOBILE
+===================================================== */
+
 @media (max-width: 430px) {
   .navbar-links {
     gap: 7px 11px;
@@ -2243,13 +2325,25 @@ h2 {
   }
 
   .hero-section {
-    padding-top: 175px;
+    padding-top: 180px;
   }
 
   .hero-badge {
     font-size: 9px;
 
     padding: 7px 10px;
+  }
+
+  /* Smaller profile image */
+  .profile-image-container {
+    width: 125px;
+    height: 125px;
+
+    margin-bottom: 28px;
+  }
+
+  .profile-image {
+    object-position: center 20%;
   }
 
   .hero-section h1 {

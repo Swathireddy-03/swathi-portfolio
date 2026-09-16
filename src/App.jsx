@@ -149,10 +149,10 @@ function App() {
 
             <p>
               I have developed projects such as{" "}
-              <strong>EduVault</strong> and <strong>SafeSeat</strong>,
-              gaining practical experience in application development,
-              user interface design, backend development, database
-              management, and deployment.
+              <strong>EduVault</strong> and{" "}
+              <strong>SafeSeat</strong>, gaining practical experience
+              in application development, user interface design,
+              backend development, database management, and deployment.
             </p>
 
             <p>
@@ -205,6 +205,8 @@ function App() {
         </div>
 
         <div className="education-timeline">
+          {/* B.Tech */}
+
           <div className="education-item">
             <div className="timeline-dot"></div>
 
@@ -253,6 +255,8 @@ function App() {
             </div>
           </div>
 
+          {/* Intermediate */}
+
           <div className="education-item">
             <div className="timeline-dot"></div>
 
@@ -287,6 +291,8 @@ function App() {
               </p>
             </div>
           </div>
+
+          {/* SSC */}
 
           <div className="education-item">
             <div className="timeline-dot"></div>
@@ -343,6 +349,7 @@ function App() {
         </p>
 
         <div className="skills-grid">
+
           {/* Programming */}
 
           <div className="skill-category">
@@ -385,6 +392,7 @@ function App() {
             <div className="skill-tags">
               <span>HTML</span>
               <span>CSS</span>
+              <span>JavaScript</span>
             </div>
           </div>
 
@@ -405,7 +413,7 @@ function App() {
             </div>
           </div>
 
-          {/* Tools */}
+          {/* Database & Tools */}
 
           <div className="skill-category">
             <div className="skill-category-header">
@@ -447,6 +455,7 @@ function App() {
         </p>
 
         <div className="projects-container">
+
           {/* EduVault */}
 
           <article className="project-card featured-project">
@@ -504,6 +513,7 @@ function App() {
             <div className="tech-stack">
               <span>HTML</span>
               <span>CSS</span>
+              <span>JavaScript</span>
               <span>Node.js</span>
               <span>MySQL</span>
             </div>
@@ -602,6 +612,7 @@ function App() {
             <div className="tech-stack">
               <span>HTML</span>
               <span>CSS</span>
+              <span>JavaScript</span>
               <span>Node.js</span>
               <span>MySQL</span>
             </div>
@@ -629,17 +640,19 @@ function App() {
 
           <div>
             <p className="section-label">RECOGNITION</p>
-            <h2>Certification</h2>
+            <h2>Certifications</h2>
           </div>
         </div>
 
         <p className="section-intro">
-          Recognition associated with my EduVault academic resource
-          management project.
+          Certifications and recognition associated with my academic
+          and technical learning.
         </p>
 
         <div className="certificate-card">
+
           <div className="certificate-content">
+
             <div className="certificate-badge">
               RESEARCH PUBLICATION
             </div>
@@ -656,6 +669,7 @@ function App() {
             </p>
 
             <div className="certificate-details">
+
               <div>
                 <span>Paper ID</span>
                 <strong>IJRASET84523</strong>
@@ -675,6 +689,7 @@ function App() {
                 <span>Journal</span>
                 <strong>IJRASET</strong>
               </div>
+
             </div>
 
             <div className="project-buttons">
@@ -688,6 +703,7 @@ function App() {
                 <span>↗</span>
               </a>
             </div>
+
           </div>
 
           <div className="certificate-image-wrapper">
@@ -696,31 +712,77 @@ function App() {
               alt="EduVault Research Publication Certificate"
             />
           </div>
+
+        </div>
+
+        {/* Infosys Springboard Certifications */}
+
+        <div className="certificate-list">
+
+          <div className="certificate-item">
+            <div className="certificate-item-number">
+              01
+            </div>
+
+            <div>
+              <h3>C Programming</h3>
+              <p>Infosys Springboard</p>
+            </div>
+
+            <span className="certificate-completed">
+              Completed
+            </span>
+          </div>
+
+          <div className="certificate-item">
+            <div className="certificate-item-number">
+              02
+            </div>
+
+            <div>
+              <h3>Database Management Systems (DBMS)</h3>
+              <p>Infosys Springboard</p>
+            </div>
+
+            <span className="certificate-completed">
+              Completed
+            </span>
+          </div>
+
         </div>
       </section>
 
       {/* ================= RESUME ================= */}
 
       <section className="resume-section" id="resume">
+
         <div className="resume-decoration resume-decoration-one"></div>
         <div className="resume-decoration resume-decoration-two"></div>
 
         <div className="resume-content">
-          <div className="resume-icon">CV</div>
+
+          <div className="resume-icon">
+            CV
+          </div>
 
           <p className="resume-label">
             MY PROFESSIONAL PROFILE
           </p>
 
-          <h2>Want to know more about me?</h2>
+          <h2>
+            Want to know more about me?
+          </h2>
 
           <p>
             Explore my complete resume to learn more about my
-            education, technical skills, projects, and professional
-            interests.
+            education, technical skills, projects, certifications,
+            and professional interests.
           </p>
 
           <div className="resume-buttons">
+
+            {/* VIEW RESUME */}
+
             <a
               href="/Swathi_Reddy_Resume_Final.pdf"
               target="_blank"
@@ -731,14 +793,17 @@ function App() {
               <span>↗</span>
             </a>
 
+            {/* DOWNLOAD RESUME */}
+
             <a
               href="/Swathi_Reddy_Resume_Final.pdf"
-              download
+              download="Swathi_Reddy_Resume.pdf"
               className="resume-download-button"
             >
               Download Resume
               <span>↓</span>
             </a>
+
           </div>
         </div>
       </section>
@@ -746,13 +811,23 @@ function App() {
       {/* ================= CONTACT ================= */}
 
       <section id="contact">
+
         <div className="section-heading">
-          <span className="section-number">06</span>
+
+          <span className="section-number">
+            06
+          </span>
 
           <div>
-            <p className="section-label">GET IN TOUCH</p>
-            <h2>Let's Connect</h2>
+            <p className="section-label">
+              GET IN TOUCH
+            </p>
+
+            <h2>
+              Let's Connect
+            </h2>
           </div>
+
         </div>
 
         <p className="section-intro">
@@ -762,11 +837,16 @@ function App() {
         </p>
 
         <div className="contact-grid">
+
+          {/* Email */}
+
           <a
             href="mailto:swathireddyvutkuri@gmail.com"
             className="contact-card"
           >
-            <div className="contact-icon">@</div>
+            <div className="contact-icon">
+              @
+            </div>
 
             <div>
               <span>Email</span>
@@ -779,13 +859,17 @@ function App() {
             <b>↗</b>
           </a>
 
+          {/* LinkedIn */}
+
           <a
             href="https://www.linkedin.com/in/swathireddy-vutkuri-a21855411/"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
           >
-            <div className="contact-icon">in</div>
+            <div className="contact-icon">
+              in
+            </div>
 
             <div>
               <span>LinkedIn</span>
@@ -798,13 +882,17 @@ function App() {
             <b>↗</b>
           </a>
 
+          {/* GitHub */}
+
           <a
             href="https://github.com/Swathireddy-03"
             target="_blank"
             rel="noopener noreferrer"
             className="contact-card"
           >
-            <div className="contact-icon">&lt;/&gt;</div>
+            <div className="contact-icon">
+              &lt;/&gt;
+            </div>
 
             <div>
               <span>GitHub</span>
@@ -817,27 +905,36 @@ function App() {
             <b>↗</b>
           </a>
 
+          {/* Phone */}
+
           <a
             href="tel:+919502413681"
             className="contact-card"
           >
-            <div className="contact-icon">☎</div>
+            <div className="contact-icon">
+              ☎
+            </div>
 
             <div>
               <span>Phone</span>
 
-              <strong>+91 95024 13681</strong>
+              <strong>
+                +91 95024 13681
+              </strong>
             </div>
 
             <b>↗</b>
           </a>
+
         </div>
       </section>
 
       {/* ================= FOOTER ================= */}
 
       <footer className="portfolio-footer">
+
         <div className="footer-content">
+
           <div className="footer-brand">
             <span>SWATHI</span> REDDY
           </div>
@@ -847,11 +944,27 @@ function App() {
           </p>
 
           <div className="footer-links">
-            <a href="#home">Home</a>
-            <a href="#about">About</a>
-            <a href="#projects">Projects</a>
-            <a href="#resume">Resume</a>
-            <a href="#contact">Contact</a>
+
+            <a href="#home">
+              Home
+            </a>
+
+            <a href="#about">
+              About
+            </a>
+
+            <a href="#projects">
+              Projects
+            </a>
+
+            <a href="#resume">
+              Resume
+            </a>
+
+            <a href="#contact">
+              Contact
+            </a>
+
           </div>
 
           <div className="footer-divider"></div>
@@ -863,7 +976,9 @@ function App() {
           <p className="footer-built">
             Designed & Developed with care.
           </p>
+
         </div>
+
       </footer>
     </>
   );
