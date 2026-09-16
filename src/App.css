@@ -1677,6 +1677,160 @@ h2 {
 .certificate-image-wrapper img:hover {
   transform: scale(1.015);
 }
+/* =====================================================
+   INFOSYS SPRINGBOARD CERTIFICATIONS
+===================================================== */
+
+.certificate-list {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 16px;
+
+  margin-top: 25px;
+}
+
+.certificate-item {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  padding: 23px;
+
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.025);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+
+  transition: 0.3s;
+
+  font-family: "DM Sans", sans-serif;
+}
+
+.certificate-item:hover {
+  border-color: rgba(139, 124, 246, 0.22);
+
+  transform: translateY(-4px);
+
+  background: rgba(139, 124, 246, 0.04);
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.18);
+}
+
+
+/* Certificate title */
+
+.certificate-item h3 {
+  margin: 0 0 6px;
+
+  color: #e2e6ee;
+
+  font-family: "Space Grotesk", sans-serif;
+
+  font-size: 15px;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+
+/* Certificate provider */
+
+.certificate-item p {
+  margin: 0;
+
+  color: #747e91;
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 500;
+
+  line-height: 1.5;
+}
+
+
+/* Completed badge */
+
+.certificate-completed {
+  flex-shrink: 0;
+
+  padding: 6px 11px;
+
+  border-radius: 20px;
+
+  color: #62d99b;
+
+  background: rgba(98, 217, 155, 0.07);
+
+  border: 1px solid rgba(98, 217, 155, 0.16);
+
+  font-family: "DM Sans", sans-serif;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   CERTIFICATE MOBILE
+===================================================== */
+
+@media (max-width: 800px) {
+  .certificate-list {
+    grid-template-columns: 1fr;
+
+    gap: 14px;
+
+    margin-top: 20px;
+  }
+
+  .certificate-item {
+    padding: 21px;
+  }
+
+  .certificate-item h3 {
+    font-size: 14px;
+  }
+
+  .certificate-item p {
+    font-size: 10px;
+  }
+}
+
+
+@media (max-width: 430px) {
+  .certificate-item {
+    align-items: flex-start;
+
+    flex-direction: column;
+
+    gap: 13px;
+
+    padding: 19px;
+  }
+
+  .certificate-item h3 {
+    font-size: 14px;
+  }
+
+  .certificate-completed {
+    font-size: 8px;
+
+    padding: 6px 10px;
+  }
+}
 
 /* =====================================================
    RESUME

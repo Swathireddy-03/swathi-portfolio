@@ -205,6 +205,7 @@ function App() {
         </div>
 
         <div className="education-timeline">
+
           {/* B.Tech */}
 
           <div className="education-item">
@@ -719,10 +720,9 @@ function App() {
 
         <div className="certificate-list">
 
+          {/* C Programming */}
+
           <div className="certificate-item">
-            <div className="certificate-item-number">
-              01
-            </div>
 
             <div>
               <h3>C Programming</h3>
@@ -732,21 +732,25 @@ function App() {
             <span className="certificate-completed">
               Completed
             </span>
+
           </div>
 
+          {/* DBMS */}
+
           <div className="certificate-item">
-            <div className="certificate-item-number">
-              02
-            </div>
 
             <div>
-              <h3>Database Management Systems (DBMS)</h3>
+              <h3>
+                Database Management Systems (DBMS)
+              </h3>
+
               <p>Infosys Springboard</p>
             </div>
 
             <span className="certificate-completed">
               Completed
             </span>
+
           </div>
 
         </div>
